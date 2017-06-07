@@ -1,0 +1,913 @@
+{
+  "checksum": "c91e00f49afc17acfc286619f26bf82c",
+  "db": {
+    "dictAssessId2Info": {
+      ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\nLOCKED_ANSWER\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nLOCKED_ANSWER\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\nLOCKED_ANSWER\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\nLOCKED_ANSWER\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n": {
+        "assessNum": "1",
+        "dictWA2DictInfo": {
+          "['1 2 3']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "4",
+              "lstdsntneedcommas-pythonlistsyntax": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "15",
+              "lstdsntneedcommas": "15"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax",
+              "lstdsntneedcommas",
+              "lstdsntneedcommas-pythonlistsyntax"
+            ]
+          },
+          "['1, 2, 3']": {
+            "dictTag2ConceptMsg": {
+              "lstdsntneedbrackets-pythonlistsyntax": "4"
+            },
+            "dictTag2KIMsg": {
+              "lstdsntneedbrackets": "15"
+            },
+            "lstMisU": [
+              "lstdsntneedbrackets",
+              "lstdsntneedbrackets-pythonlistsyntax"
+            ]
+          },
+          "['False']": {
+            "dictTag2ConceptMsg": {
+              "sortedevalsbool-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedevalsbool": "13"
+            },
+            "lstMisU": [
+              "sortedevalsbool",
+              "sortedevalsbool-sortedfn"
+            ]
+          },
+          "['True']": {
+            "dictTag2ConceptMsg": {
+              "sortedevalsbool-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedevalsbool": "13"
+            },
+            "lstMisU": [
+              "sortedevalsbool",
+              "sortedevalsbool-sortedfn"
+            ]
+          },
+          "['[1, 1, 2, 2, 3, 3]']": {
+            "dictTag2ConceptMsg": {
+              "setcanhavedups-sets": "8"
+            },
+            "dictTag2KIMsg": {
+              "setcanhavedups": "12"
+            },
+            "lstMisU": [
+              "setcanhavedups",
+              "setcanhavedups-sets"
+            ]
+          },
+          "['[1,1,2,2,3,3]']": {
+            "dictTag2ConceptMsg": {
+              "setcanhavedups-sets": "8"
+            },
+            "dictTag2KIMsg": {
+              "setcanhavedups": "12"
+            },
+            "lstMisU": [
+              "setcanhavedups",
+              "setcanhavedups-sets"
+            ]
+          },
+          "['a']": {
+            "dictTag2ConceptMsg": {
+              "bindvartovarname-assignment": "0",
+              "bindvartovarname-evalvar": "2"
+            },
+            "dictTag2KIMsg": {
+              "bindvartovarname": "16"
+            },
+            "lstMisU": [
+              "bindvartovarname",
+              "bindvartovarname-assignment",
+              "bindvartovarname-evalvar"
+            ]
+          },
+          "['{1, 1, 2, 2, 3, 3}']": {
+            "dictTag2ConceptMsg": {
+              "setcanhavedups-sets": "8",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "setcanhavedups": "12",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "setcanhavedups",
+              "setcanhavedups-sets",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1, 2, 3}']": {
+            "dictTag2ConceptMsg": {
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1,2,3}']": {
+            "dictTag2ConceptMsg": {
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{3, 2, 1}']": {
+            "dictTag2ConceptMsg": {
+              "sloppysort-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppysort": "14"
+            },
+            "lstMisU": [
+              "sloppysort",
+              "sloppysort-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {},
+        "lstWrongAnsWatch": [
+          "['2']",
+          "['3']",
+          "['6']",
+          "['Error']",
+          "['None']"
+        ]
+      },
+      ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\nLOCKED_ANSWER\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n": {
+        "assessNum": "3",
+        "dictWA2DictInfo": {
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['4']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['False']": {
+            "dictTag2ConceptMsg": {
+              "sortedevalsbool-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedevalsbool": "13"
+            },
+            "lstMisU": [
+              "sortedevalsbool",
+              "sortedevalsbool-sortedfn"
+            ]
+          },
+          "['True']": {
+            "dictTag2ConceptMsg": {
+              "sortedevalsbool-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedevalsbool": "13"
+            },
+            "lstMisU": [
+              "sortedevalsbool",
+              "sortedevalsbool-sortedfn"
+            ]
+          },
+          "['[1, 2, 3, 4]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyvareval-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppyvareval": "21"
+            },
+            "lstMisU": [
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['[1, 2, 4, 12, 1000]']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect"
+            ]
+          },
+          "['[1, 2, 4]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy"
+            ]
+          },
+          "['[1, 2]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy"
+            ]
+          },
+          "['[1,2,3,4]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyvareval-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppyvareval": "21"
+            },
+            "lstMisU": [
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['[1,2,4,12,1000]']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect"
+            ]
+          },
+          "['[1,2,4]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy"
+            ]
+          },
+          "['[1,2]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy"
+            ]
+          },
+          "['[1]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy"
+            ]
+          },
+          "['[4]']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy"
+            ]
+          },
+          "['{1, 2, 4, 12, 1000}']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1, 2, 4}']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1, 2}']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1, 4}']": {
+            "dictTag2ConceptMsg": {
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1,2}']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1,4}']": {
+            "dictTag2ConceptMsg": {
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1}']": {
+            "dictTag2ConceptMsg": {
+              "sloppyintersect-intersect": "6",
+              "sloppyintersect-sloppy": "3",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sloppyintersect": "19",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "sloppyintersect",
+              "sloppyintersect-intersect",
+              "sloppyintersect-sloppy",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {},
+        "lstWrongAnsWatch": [
+          "['2']",
+          "['Error']"
+        ]
+      },
+      ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\n[1, 4]\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n": {
+        "assessNum": "4",
+        "dictWA2DictInfo": {
+          "['Error']": {
+            "dictTag2ConceptMsg": {
+              "ampnotvalid-intersect": "6"
+            },
+            "dictTag2KIMsg": {
+              "ampnotvalid": "22"
+            },
+            "lstMisU": [
+              "ampnotvalid",
+              "ampnotvalid-intersect"
+            ]
+          },
+          "['False']": {
+            "dictTag2ConceptMsg": {
+              "sortedevalsbool-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedevalsbool": "13"
+            },
+            "lstMisU": [
+              "sortedevalsbool",
+              "sortedevalsbool-sortedfn"
+            ]
+          },
+          "['True']": {
+            "dictTag2ConceptMsg": {
+              "sortedevalsbool-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "sortedevalsbool": "13"
+            },
+            "lstMisU": [
+              "sortedevalsbool",
+              "sortedevalsbool-sortedfn"
+            ]
+          },
+          "['[1, 1, 2, 4, 4, 12, 1000]']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6",
+              "setcanhavedups-sets": "8"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20",
+              "setcanhavedups": "12"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect",
+              "setcanhavedups",
+              "setcanhavedups-sets"
+            ]
+          },
+          "['[1, 2, 4, 12, 1000]']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect"
+            ]
+          },
+          "['[1, 2, 4, 4, 12, 1000]']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6",
+              "setcanhavedups-sets": "8"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20",
+              "setcanhavedups": "12"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect",
+              "setcanhavedups",
+              "setcanhavedups-sets"
+            ]
+          },
+          "['[1,1,2,4,4,12,1000]']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6",
+              "setcanhavedups-sets": "8"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20",
+              "setcanhavedups": "12"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect",
+              "setcanhavedups",
+              "setcanhavedups-sets"
+            ]
+          },
+          "['[1,2,4,12,1000]']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect"
+            ]
+          },
+          "['{1, 2, 4, 12, 1000}']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          },
+          "['{1,2,4,12,1000}']": {
+            "dictTag2ConceptMsg": {
+              "intersectisunion-intersect": "6",
+              "sortedrtnbadformatlst-sortedfn": "9"
+            },
+            "dictTag2KIMsg": {
+              "intersectisunion": "20",
+              "sortedrtnbadformatlst": "13"
+            },
+            "lstMisU": [
+              "intersectisunion",
+              "intersectisunion-intersect",
+              "sortedrtnbadformatlst",
+              "sortedrtnbadformatlst-sortedfn"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {},
+        "lstWrongAnsWatch": []
+      },
+      ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\n[1, 4]\n>>> sorted(a & b)\n[1, 4]\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n": {
+        "assessNum": "5",
+        "dictWA2DictInfo": {
+          "['[1, 4]']": {
+            "dictTag2ConceptMsg": {
+              "unionisintersect-union": "10"
+            },
+            "dictTag2KIMsg": {
+              "unionisintersect": "20"
+            },
+            "lstMisU": [
+              "unionisintersect",
+              "unionisintersect-union"
+            ]
+          },
+          "['[1,4]']": {
+            "dictTag2ConceptMsg": {
+              "unionisintersect-union": "10"
+            },
+            "dictTag2KIMsg": {
+              "unionisintersect": "20"
+            },
+            "lstMisU": [
+              "unionisintersect",
+              "unionisintersect-union"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {},
+        "lstWrongAnsWatch": []
+      },
+      ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\n[1, 4]\n>>> sorted(a & b)\n[1, 4]\n>>> sorted(a.union(b))\n[1, 2, 4, 12, 1000]\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n": {
+        "assessNum": "6",
+        "dictWA2DictInfo": {
+          "['[1, 4]']": {
+            "dictTag2ConceptMsg": {
+              "unionisintersect-union": "10"
+            },
+            "dictTag2KIMsg": {
+              "unionisintersect": "20"
+            },
+            "lstMisU": [
+              "unionisintersect",
+              "unionisintersect-union"
+            ]
+          },
+          "['[1,4]']": {
+            "dictTag2ConceptMsg": {
+              "unionisintersect-union": "10"
+            },
+            "dictTag2KIMsg": {
+              "unionisintersect": "20"
+            },
+            "lstMisU": [
+              "unionisintersect",
+              "unionisintersect-union"
+            ]
+          },
+          "['[12, 1000]']": {
+            "dictTag2ConceptMsg": {
+              "barisdiff-intersect": "6"
+            },
+            "dictTag2KIMsg": {
+              "barisdiff": "23"
+            },
+            "lstMisU": [
+              "barisdiff",
+              "barisdiff-intersect"
+            ]
+          },
+          "['[2, 12, 1000]']": {
+            "dictTag2ConceptMsg": {
+              "barisxor-intersect": "6"
+            },
+            "dictTag2KIMsg": {
+              "barisxor": "23"
+            },
+            "lstMisU": [
+              "barisxor",
+              "barisxor-intersect"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {},
+        "lstWrongAnsWatch": []
+      },
+      ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\n[1, 4]\n>>> sorted(a & b)\n[1, 4]\n>>> sorted(a.union(b))\n[1, 2, 4, 12, 1000]\n>>> sorted(a | b)\n[1, 2, 4, 12, 1000]\n>>> sorted(a - b)\nLOCKED_ANSWER\n": {
+        "assessNum": "7",
+        "dictWA2DictInfo": {
+          "['Error']": {
+            "dictTag2ConceptMsg": {
+              "setdiffisnotitself-setdiff": "7"
+            },
+            "dictTag2KIMsg": {
+              "setdiffisnotitself": "20"
+            },
+            "lstMisU": [
+              "setdiffisnotitself",
+              "setdiffisnotitself-setdiff"
+            ]
+          },
+          "['[1, 2, 4, 12, 1000]']": {
+            "dictTag2ConceptMsg": {
+              "setdiffisnotitself-setdiff": "7"
+            },
+            "dictTag2KIMsg": {
+              "setdiffisnotitself": "20"
+            },
+            "lstMisU": [
+              "setdiffisnotitself",
+              "setdiffisnotitself-setdiff"
+            ]
+          },
+          "['[1, 4]']": {
+            "dictTag2ConceptMsg": {
+              "setdiffisnotitself-setdiff": "7"
+            },
+            "dictTag2KIMsg": {
+              "setdiffisnotitself": "20"
+            },
+            "lstMisU": [
+              "setdiffisnotitself",
+              "setdiffisnotitself-setdiff"
+            ]
+          },
+          "['[2, 12, 1000]']": {
+            "dictTag2ConceptMsg": {
+              "setdiffisnotitself-setdiff": "7"
+            },
+            "dictTag2KIMsg": {
+              "setdiffisnotitself": "20"
+            },
+            "lstMisU": [
+              "setdiffisnotitself",
+              "setdiffisnotitself-setdiff"
+            ]
+          },
+          "['[2,12,1000]']": {
+            "dictTag2ConceptMsg": {
+              "setdiffisnotitself-setdiff": "7"
+            },
+            "dictTag2KIMsg": {
+              "setdiffisnotitself": "20"
+            },
+            "lstMisU": [
+              "setdiffisnotitself",
+              "setdiffisnotitself-setdiff"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {},
+        "lstWrongAnsWatch": [
+          "['[2]']"
+        ]
+      },
+      ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nLOCKED_ANSWER\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\nLOCKED_ANSWER\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\nLOCKED_ANSWER\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n": {
+        "assessNum": "2",
+        "dictWA2DictInfo": {
+          "['0']": {
+            "dictTag2ConceptMsg": {
+              "boolisbinary-booleanrepresentation": "1",
+              "inrtnvalisnotbool-inoperator": "5"
+            },
+            "dictTag2KIMsg": {
+              "boolisbinary": "17",
+              "inrtnvalisnotbool": "18"
+            },
+            "lstMisU": [
+              "boolisbinary",
+              "boolisbinary-booleanrepresentation",
+              "inrtnvalisnotbool",
+              "inrtnvalisnotbool-inoperator"
+            ]
+          },
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "boolisbinary-booleanrepresentation": "1",
+              "inrtnvalisnotbool-inoperator": "5",
+              "setcanhavedups-sets": "8"
+            },
+            "dictTag2KIMsg": {
+              "boolisbinary": "17",
+              "inrtnvalisnotbool": "18",
+              "setcanhavedups": "12"
+            },
+            "lstMisU": [
+              "boolisbinary",
+              "boolisbinary-booleanrepresentation",
+              "inrtnvalisnotbool",
+              "inrtnvalisnotbool-inoperator",
+              "setcanhavedups",
+              "setcanhavedups-sets"
+            ]
+          },
+          "['4']": {
+            "dictTag2ConceptMsg": {
+              "inrtnvalisnotbool-inoperator": "5"
+            },
+            "dictTag2KIMsg": {
+              "inrtnvalisnotbool": "18"
+            },
+            "lstMisU": [
+              "inrtnvalisnotbool",
+              "inrtnvalisnotbool-inoperator"
+            ]
+          },
+          "['True']": {
+            "dictTag2ConceptMsg": {
+              "setcanhavedups-sets": "8"
+            },
+            "dictTag2KIMsg": {
+              "setcanhavedups": "12"
+            },
+            "lstMisU": [
+              "setcanhavedups",
+              "setcanhavedups-sets"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {},
+        "lstWrongAnsWatch": []
+      },
+      ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\nLOCKED_ANSWER\n>>> sorted(a)\nLOCKED_ANSWER\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nLOCKED_ANSWER\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\nLOCKED_ANSWER\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\nLOCKED_ANSWER\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n": {
+        "assessNum": "0",
+        "dictWA2DictInfo": {
+          "['6']": {
+            "dictTag2ConceptMsg": {
+              "setcanhavedups-sets": "8"
+            },
+            "dictTag2KIMsg": {
+              "setcanhavedups": "12"
+            },
+            "lstMisU": [
+              "setcanhavedups",
+              "setcanhavedups-sets"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {},
+        "lstWrongAnsWatch": [
+          "['0']",
+          "['1']",
+          "['2']",
+          "['5']"
+        ]
+      }
+    },
+    "dictAssessNum2AssessId": {
+      "0": ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\nLOCKED_ANSWER\n>>> sorted(a)\nLOCKED_ANSWER\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nLOCKED_ANSWER\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\nLOCKED_ANSWER\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\nLOCKED_ANSWER\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n",
+      "1": ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\nLOCKED_ANSWER\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nLOCKED_ANSWER\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\nLOCKED_ANSWER\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\nLOCKED_ANSWER\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n",
+      "2": ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nLOCKED_ANSWER\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\nLOCKED_ANSWER\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\nLOCKED_ANSWER\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n",
+      "3": ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\nLOCKED_ANSWER\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n",
+      "4": ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\n[1, 4]\n>>> sorted(a & b)\nLOCKED_ANSWER\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n",
+      "5": ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\n[1, 4]\n>>> sorted(a & b)\n[1, 4]\n>>> sorted(a.union(b))\nLOCKED_ANSWER\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n",
+      "6": ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\n[1, 4]\n>>> sorted(a & b)\n[1, 4]\n>>> sorted(a.union(b))\n[1, 2, 4, 12, 1000]\n>>> sorted(a | b)\nLOCKED_ANSWER\n>>> sorted(a - b)\nLOCKED_ANSWER\n",
+      "7": ">>> a = [1, 1, 2, 2, 3, 3]\n>>> a = set(a)\n>>> len(a)\n3\n>>> sorted(a)\n[1, 2, 3]\n>>> a.add(4)\n>>> a.add(4)\n>>> a.remove(4)\n>>> 4 in a\nFalse\n>>> a = {1, 4, 12, 1000}\n>>> sum(a)\n1017\n>>> b = {1, 2, 4}\n>>> sorted(a.intersection(b))\n[1, 4]\n>>> sorted(a & b)\n[1, 4]\n>>> sorted(a.union(b))\n[1, 2, 4, 12, 1000]\n>>> sorted(a | b)\n[1, 2, 4, 12, 1000]\n>>> sorted(a - b)\nLOCKED_ANSWER\n"
+    },
+    "dictId2Msg": {
+      "0": "An assignment statement first evaluates the expression on the right side of the\n|=| operator to get a value. This value is then bound to the name on the left\nside of the |=| in the first frame in the current environment. For example,\nwhile |a = 0| displays nothing, |a == 0| displays |True|. Notice that Python\ndistinguishes assignment |=| from equality comparison |==|.",
+      "1": "In Python there are boolean primitives |True| and |False| as opposed to prior\nlanguages that use |1| and |0|.",
+      "10": "The union operation (shorthand |||) is used to create a set of all the elements\npresent in 2 or more sets. For example, where |s = {1, 3, 5}|, |t = {1, 4, 9}|,\nand |u = {1, 2}|, |s.union(t, u)| will return {1, 2, 3, 4, 5, 9}.",
+      "11": "Typo?",
+      "12": "Can a set have duplicates?",
+      "13": "What does |sorted()| return?",
+      "14": "Hmm... is that completely sorted alphanumerically?",
+      "15": "Is that a list? Python can't tell that it is.",
+      "16": "Hmm... What is the variable bound to?",
+      "17": "How are boolean values represented in Python?",
+      "18": "What does |in| do? What type would it return?",
+      "19": "Double check the set intersection?",
+      "2": "A variable is evaluated to the value it was assigned. If it was not assigned\nprior to being evaluated a NameError is raised.",
+      "20": "Remember the difference between intersect, union, and difference.",
+      "21": "Double check the variable's value?",
+      "22": "Double check how |&| works with sets.",
+      "23": "Double check how ||| works with sets.",
+      "3": "Try:\n1) Reading the code or instructions more carefully,\n2) Writing out the variable's values, or\n3) Drawing an environment diagram.",
+      "4": "A list in Python is contained within square brackets and separated by commas.\nThe elements in the list can be be of any type, including sub-lists. For\nexample: |[1, 2.0, [3, 4], '5', True]|.",
+      "5": "A usage of the |in| keyword in Python is to check for item membership in a \ncollection. This always returns a boolean value. For example, |4 in {2, 3, 4}|\nwill return |True| and |'hello' in [4, 'hi']| will return |False|.",
+      "6": "The intersection operator (shorthand |&|) is used to determine the common\nelements in 2 or more sets. For example, where |s = {1, 3, 5}|, |t = {1, 4, 9}|,\nand |u = {1, 2}|, |s.intersection(t, u)| will return |{1}|.",
+      "7": "The difference operation (shorthand |-|) is used to determine elements that are\nin the first set but not in the other set. For example, where |s = {1, 3, 5}|\nand |t = {1, 2}|, |s.difference(t)| will return |{3, 5}|.",
+      "8": "A set is a collection of elements that are enclosed by curly braces |{}| and\nadhere to certain properties: elements cannot have duplicates and elements are \nunordered. For example, |{1, 2, 1, 'hello', 4}| results in |{4, 1, 'hello', 2}|.",
+      "9": "The |sorted()| function takes in a collection (e.g. list, set, dictionary) and\nreturns a list of those items in alphanumeric order. For example,\n|sorted({3, 9, 55, 28, -19})| returns the list |[-19, 3, 9, 28, 55]|."
+    },
+    "dictTg2Func": {
+      "0": "none",
+      "1": "tag2ConceptMsg",
+      "2": "tag2KIMsg",
+      "3": "tag2ConceptMsg",
+      "4": "tag2KIMsg"
+    },
+    "wrongAnsThresh": 2
+  }
+}

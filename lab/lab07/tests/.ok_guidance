@@ -1,0 +1,3602 @@
+{
+  "checksum": "d9f5c2fc681f765dc961760bac0d6f78",
+  "db": {
+    "dictAssessId2Info": {
+      ">>> class EvenNaturalsIterator():\n...     def __init__(self):\n...         self.current = 0\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return EvenNaturalsIterator()\n>>> evens = EvenNaturalsIterator()\n>>> even_iter1 = iter(evens)\n>>> even_iter2 = iter(evens)\n>>> next(even_iter1)\n0\n>>> next(even_iter1)\n2\n>>> next(even_iter1)\n4\n>>> next(even_iter2)\n0\n>>> next(even_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "9",
+        "dictWA2DictInfo": {
+          "['0']": {
+            "dictTag2ConceptMsg": {
+              "nxtrtnsfirstval-iteratornext": "2"
+            },
+            "dictTag2KIMsg": {
+              "nxtrtnsfirstval": "6"
+            },
+            "lstMisU": [
+              "nxtrtnsfirstval",
+              "nxtrtnsfirstval-iteratornext"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['0']": [
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "1",
+              "['\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[C 3']"
+            ],
+            [
+              "3",
+              "['65']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ],
+            [
+              "8",
+              "['\\x1b[A\\x1b[B6']"
+            ]
+          ],
+          "['\\x1bOP']": [
+            [
+              "3",
+              "['5']"
+            ]
+          ],
+          "['w']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "3",
+              "['5']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": []
+      },
+      ">>> class EvenNaturalsIterator():\n...     def __init__(self):\n...         self.current = 0\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return EvenNaturalsIterator()\n>>> evens = EvenNaturalsIterator()\n>>> even_iter1 = iter(evens)\n>>> even_iter2 = iter(evens)\n>>> next(even_iter1)\n0\n>>> next(even_iter1)\n2\n>>> next(even_iter1)\n4\n>>> next(even_iter2)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "8",
+        "dictWA2DictInfo": {
+          "['2']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy"
+            ]
+          },
+          "['6']": {
+            "dictTag2ConceptMsg": {
+              "itermustrtnself-iteratoriter": "1",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "itermustrtnself": "8",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "itermustrtnself",
+              "itermustrtnself-iteratoriter",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['1']": [
+            [
+              "8",
+              "['6']"
+            ]
+          ],
+          "['100']": [
+            [
+              "5",
+              "['1']"
+            ]
+          ],
+          "['2']": [
+            [
+              "8",
+              "['3']"
+            ]
+          ],
+          "['3']": [
+            [
+              "8",
+              "['2']"
+            ]
+          ],
+          "['6']": [
+            [
+              "3",
+              "['0']"
+            ],
+            [
+              "8",
+              "['1']"
+            ]
+          ],
+          "['False']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "7",
+              "['0']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['None']": [
+            [
+              "1",
+              "['1']"
+            ]
+          ],
+          "['True']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "7",
+              "['0']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['\\x1b[A\\x1b[B6']": [
+            [
+              "9",
+              "['0']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": [
+          "['10']",
+          "['12']",
+          "['4']",
+          "['5']",
+          "['7']",
+          "['8']",
+          "['9']"
+        ]
+      },
+      ">>> class EvenNaturalsIterator():\n...     def __init__(self):\n...         self.current = 0\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return EvenNaturalsIterator()\n>>> evens = EvenNaturalsIterator()\n>>> even_iter1 = iter(evens)\n>>> even_iter2 = iter(evens)\n>>> next(even_iter1)\n0\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "7",
+        "dictWA2DictInfo": {
+          "['0']": {
+            "dictTag2ConceptMsg": {
+              "nxtrtnsfirstval-iteratornext": "2",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "nxtrtnsfirstval": "6",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "nxtrtnsfirstval",
+              "nxtrtnsfirstval-iteratornext",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['-']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "7",
+              "['0']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['0']": [
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['q']": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "3",
+              "['5']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": []
+      },
+      ">>> class EvenNaturalsIterator():\n...     def __init__(self):\n...         self.current = 0\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return EvenNaturalsIterator()\n>>> evens = EvenNaturalsIterator()\n>>> even_iter1 = iter(evens)\n>>> even_iter2 = iter(evens)\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "6",
+        "dictWA2DictInfo": {
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0",
+              "sloppyinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4",
+              "sloppyinc": "7",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy",
+              "sloppyinc",
+              "sloppyinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['2']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['1']": [
+            [
+              "0",
+              "[\"''\"]"
+            ],
+            [
+              "0",
+              "['6']"
+            ],
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['e']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "1",
+              "['\\x1b[6~3']"
+            ],
+            [
+              "2",
+              "['122']"
+            ],
+            [
+              "2",
+              "['13']"
+            ],
+            [
+              "2",
+              "['[3]']"
+            ],
+            [
+              "2",
+              "['[]']"
+            ],
+            [
+              "3",
+              "['65']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['13']"
+            ],
+            [
+              "6",
+              "['15']"
+            ],
+            [
+              "6",
+              "['16']"
+            ],
+            [
+              "6",
+              "['17']"
+            ],
+            [
+              "6",
+              "['18']"
+            ],
+            [
+              "6",
+              "['19']"
+            ],
+            [
+              "6",
+              "['20']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['3']"
+            ],
+            [
+              "6",
+              "['5']"
+            ],
+            [
+              "6",
+              "['7']"
+            ],
+            [
+              "6",
+              "['8']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['10']": [
+            [
+              "6",
+              "['2']"
+            ]
+          ],
+          "['11']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['12']": [
+            [
+              "6",
+              "['2']"
+            ]
+          ],
+          "['13']": [
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "6",
+              "['2']"
+            ]
+          ],
+          "['14']": [
+            [
+              "6",
+              "['2']"
+            ]
+          ],
+          "['15']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['16']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['17']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['18']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['19']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['2']": [
+            [
+              "3",
+              "['9']"
+            ],
+            [
+              "6",
+              "['10']"
+            ],
+            [
+              "6",
+              "['12']"
+            ],
+            [
+              "6",
+              "['13']"
+            ],
+            [
+              "6",
+              "['14']"
+            ],
+            [
+              "6",
+              "['5']"
+            ],
+            [
+              "6",
+              "['6']"
+            ],
+            [
+              "6",
+              "['7']"
+            ],
+            [
+              "6",
+              "['8']"
+            ]
+          ],
+          "['20']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['21']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['3']": [
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['41']": [
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ]
+          ],
+          "['5']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "6",
+              "['2']"
+            ]
+          ],
+          "['6']": [
+            [
+              "6",
+              "['2']"
+            ]
+          ],
+          "['7']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "6",
+              "['2']"
+            ]
+          ],
+          "['8']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "6",
+              "['2']"
+            ]
+          ],
+          "['9']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['3']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['[]']": [
+            [
+              "2",
+              "['1']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": [
+          "['4']"
+        ]
+      },
+      ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\n3\n>>> next(odd_iter1)\n5\n>>> next(odd_iter2)\n7\n>>> next(odd_iter1)\n9\n>>> next(odd_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "5",
+        "dictWA2DictInfo": {
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "itermustrtnnewinst-iteratoriter": "1",
+              "nxtrtnsfirstval-iteratornext": "2",
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "itermustrtnnewinst": "8",
+              "nxtrtnsfirstval": "6",
+              "outoforderrtnvsinc": "4"
+            },
+            "lstMisU": [
+              "itermustrtnnewinst",
+              "itermustrtnnewinst-iteratoriter",
+              "nxtrtnsfirstval",
+              "nxtrtnsfirstval-iteratornext",
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['1']": [
+            [
+              "0",
+              "[\"''\"]"
+            ],
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "1",
+              "['\\x1b[6~3']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['2']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "4",
+              "['99']"
+            ],
+            [
+              "5",
+              "['10']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['100']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['10']": [
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "5",
+              "['1']"
+            ]
+          ],
+          "['4']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['3']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['5']": [
+            [
+              "4",
+              "['1']"
+            ]
+          ],
+          "['6']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['3']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['7']": [
+            [
+              "4",
+              "['1']"
+            ]
+          ],
+          "['8']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['3']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": [
+          "['3']"
+        ]
+      },
+      ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\n3\n>>> next(odd_iter1)\n5\n>>> next(odd_iter2)\n7\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "4",
+        "dictWA2DictInfo": {
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "nxtrtnsfirstval-iteratornext": "2"
+            },
+            "dictTag2KIMsg": {
+              "nxtrtnsfirstval": "6"
+            },
+            "lstMisU": [
+              "nxtrtnsfirstval",
+              "nxtrtnsfirstval-iteratornext"
+            ]
+          },
+          "['7']": {
+            "dictTag2ConceptMsg": {
+              "itermustrtnnewinst-iteratoriter": "1",
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "itermustrtnnewinst": "8",
+              "outoforderrtnvsinc": "4",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "itermustrtnnewinst",
+              "itermustrtnnewinst-iteratoriter",
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['0']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['1']": [
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['[1 3]']"
+            ],
+            [
+              "0",
+              "['[1, 2]']"
+            ],
+            [
+              "0",
+              "['[1, 5]']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['2']"
+            ],
+            [
+              "4",
+              "['3']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "4",
+              "['5']"
+            ],
+            [
+              "4",
+              "['9\\x1b[D']"
+            ],
+            [
+              "4",
+              "['\\x1b[H']"
+            ],
+            [
+              "4",
+              "['`']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['5']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['7']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['11']": [
+            [
+              "4",
+              "['7']"
+            ]
+          ],
+          "['2']": [
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ]
+          ],
+          "['3']": [
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ]
+          ],
+          "['4']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['3']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['5']": [
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ]
+          ],
+          "['6']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ]
+          ],
+          "['7']": [
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "3",
+              "['8']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['11']"
+            ],
+            [
+              "4",
+              "['2']"
+            ],
+            [
+              "4",
+              "['3']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "4",
+              "['5']"
+            ],
+            [
+              "4",
+              "['9\\x1b[D']"
+            ],
+            [
+              "4",
+              "['\\x1b[H']"
+            ],
+            [
+              "4",
+              "['`']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['8']": [
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['6']"
+            ]
+          ],
+          "['99']": [
+            [
+              "5",
+              "['1']"
+            ]
+          ],
+          "['9\\x1b[D']": [
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ]
+          ],
+          "['\\x1b[H']": [
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ]
+          ],
+          "['`']": [
+            [
+              "0",
+              "['2']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": []
+      },
+      ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\n3\n>>> next(odd_iter1)\n5\n>>> next(odd_iter2)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "3",
+        "dictWA2DictInfo": {
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "itermustrtnnewinst-iteratoriter": "1",
+              "nxtrtnsfirstval-iteratornext": "2"
+            },
+            "dictTag2KIMsg": {
+              "itermustrtnnewinst": "8",
+              "nxtrtnsfirstval": "6"
+            },
+            "lstMisU": [
+              "itermustrtnnewinst",
+              "itermustrtnnewinst-iteratoriter",
+              "nxtrtnsfirstval",
+              "nxtrtnsfirstval-iteratornext"
+            ]
+          },
+          "['2']": {
+            "dictTag2ConceptMsg": {
+              "sloppyinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "sloppyinc": "7",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "sloppyinc",
+              "sloppyinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['3']": {
+            "dictTag2ConceptMsg": {
+              "itermustrtnnewinst-iteratoriter": "1",
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "itermustrtnnewinst": "8",
+              "outoforderrtnvsinc": "4",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "itermustrtnnewinst",
+              "itermustrtnnewinst-iteratoriter",
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['4']": {
+            "dictTag2ConceptMsg": {
+              "sloppyinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "sloppyinc": "7",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "sloppyinc",
+              "sloppyinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['5']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['6']": {
+            "dictTag2ConceptMsg": {
+              "sloppyinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "sloppyinc": "7",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "sloppyinc",
+              "sloppyinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['0']": [
+            [
+              "3",
+              "['1']"
+            ],
+            [
+              "8",
+              "['6']"
+            ]
+          ],
+          "['1']": [
+            [
+              "3",
+              "['0']"
+            ]
+          ],
+          "['11']": [
+            [
+              "0",
+              "['7']"
+            ],
+            [
+              "3",
+              "['5']"
+            ]
+          ],
+          "['2']": [
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['[1 3]']"
+            ],
+            [
+              "0",
+              "['[1, 2]']"
+            ],
+            [
+              "0",
+              "['[1, 5]']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['41']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['3']": [
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['9']"
+            ]
+          ],
+          "['4']": [
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['[1 3]']"
+            ],
+            [
+              "0",
+              "['[1, 2]']"
+            ],
+            [
+              "0",
+              "['[1, 5]']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['41']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['5']": [
+            [
+              "0",
+              "['1-']"
+            ],
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['[1 3]']"
+            ],
+            [
+              "0",
+              "['[1, 2]']"
+            ],
+            [
+              "0",
+              "['[1, 5]']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "3",
+              "['11']"
+            ],
+            [
+              "3",
+              "['8']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "7",
+              "['q']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ],
+            [
+              "9",
+              "['\\x1bOP']"
+            ],
+            [
+              "9",
+              "['w']"
+            ]
+          ],
+          "['6']": [
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['[1 3]']"
+            ],
+            [
+              "0",
+              "['[1, 2]']"
+            ],
+            [
+              "0",
+              "['[1, 5]']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "3",
+              "['65']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "4",
+              "['8']"
+            ],
+            [
+              "5",
+              "['10']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['65']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['8']": [
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "4",
+              "['7']"
+            ]
+          ],
+          "['9']": [
+            [
+              "6",
+              "['2']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": []
+      },
+      ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\n3\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "2",
+        "dictWA2DictInfo": {
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "nxtrtnsfirstval-iteratornext": "2"
+            },
+            "dictTag2KIMsg": {
+              "nxtrtnsfirstval": "6"
+            },
+            "lstMisU": [
+              "nxtrtnsfirstval",
+              "nxtrtnsfirstval-iteratornext"
+            ]
+          },
+          "['4']": {
+            "dictTag2ConceptMsg": {
+              "sloppyinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "sloppyinc": "7",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "sloppyinc",
+              "sloppyinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['0']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ]
+          ],
+          "['1']": [
+            [
+              "0",
+              "[\"'3'\"]"
+            ],
+            [
+              "0",
+              "[\"'5'\"]"
+            ],
+            [
+              "0",
+              "['Even']"
+            ],
+            [
+              "0",
+              "['Odd']"
+            ],
+            [
+              "0",
+              "['[5']"
+            ],
+            [
+              "2",
+              "['0']"
+            ],
+            [
+              "2",
+              "['122']"
+            ],
+            [
+              "2",
+              "['13']"
+            ],
+            [
+              "2",
+              "['2']"
+            ],
+            [
+              "2",
+              "['3']"
+            ],
+            [
+              "2",
+              "['34']"
+            ],
+            [
+              "2",
+              "['[3]']"
+            ],
+            [
+              "2",
+              "['[]']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['[]']"
+            ]
+          ],
+          "['122']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['13']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['2']": [
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ]
+          ],
+          "['3']": [
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ]
+          ],
+          "['34']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ]
+          ],
+          "['4']": [
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Even']"
+            ],
+            [
+              "0",
+              "['Odd']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "1",
+              "['odd']"
+            ],
+            [
+              "2",
+              "['0']"
+            ],
+            [
+              "2",
+              "['2']"
+            ],
+            [
+              "2",
+              "['3']"
+            ],
+            [
+              "2",
+              "['34']"
+            ],
+            [
+              "3",
+              "['65']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "4",
+              "['6']"
+            ],
+            [
+              "4",
+              "['8']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['15']"
+            ],
+            [
+              "6",
+              "['16']"
+            ],
+            [
+              "6",
+              "['17']"
+            ],
+            [
+              "6",
+              "['18']"
+            ],
+            [
+              "6",
+              "['19']"
+            ],
+            [
+              "6",
+              "['20']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['5']"
+            ],
+            [
+              "6",
+              "['7']"
+            ],
+            [
+              "6",
+              "['8']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['[3]']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['[]']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": []
+      },
+      ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "1",
+        "dictWA2DictInfo": {
+          "['1']": {
+            "dictTag2ConceptMsg": {
+              "nxtrtnsfirstval-iteratornext": "2"
+            },
+            "dictTag2KIMsg": {
+              "nxtrtnsfirstval": "6"
+            },
+            "lstMisU": [
+              "nxtrtnsfirstval",
+              "nxtrtnsfirstval-iteratornext"
+            ]
+          },
+          "['2']": {
+            "dictTag2ConceptMsg": {
+              "sloppyinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "sloppyinc": "7",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "sloppyinc",
+              "sloppyinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "['0']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ]
+          ],
+          "['1']": [
+            [
+              "0",
+              "[\"''\"]"
+            ],
+            [
+              "0",
+              "['6']"
+            ],
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Even']"
+            ],
+            [
+              "0",
+              "['Evens']"
+            ],
+            [
+              "0",
+              "['False']"
+            ],
+            [
+              "0",
+              "['Odd']"
+            ],
+            [
+              "0",
+              "['Odds']"
+            ],
+            [
+              "0",
+              "['True']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "1",
+              "['0']"
+            ],
+            [
+              "1",
+              "['11']"
+            ],
+            [
+              "1",
+              "['\\x1b[6~3']"
+            ],
+            [
+              "1",
+              "['odd']"
+            ],
+            [
+              "2",
+              "['122']"
+            ],
+            [
+              "2",
+              "['13']"
+            ],
+            [
+              "2",
+              "['34']"
+            ],
+            [
+              "2",
+              "['[3]']"
+            ],
+            [
+              "2",
+              "['[]']"
+            ],
+            [
+              "3",
+              "['65']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['None']"
+            ],
+            [
+              "8",
+              "['True']"
+            ],
+            [
+              "9",
+              "['w']"
+            ]
+          ],
+          "['11']": [
+            [
+              "1",
+              "['1']"
+            ]
+          ],
+          "['2']": [
+            [
+              "0",
+              "['6']"
+            ],
+            [
+              "0",
+              "['Empty']"
+            ],
+            [
+              "0",
+              "['Even']"
+            ],
+            [
+              "0",
+              "['Evens']"
+            ],
+            [
+              "0",
+              "['False']"
+            ],
+            [
+              "0",
+              "['Odd']"
+            ],
+            [
+              "0",
+              "['Odds']"
+            ],
+            [
+              "0",
+              "['True']"
+            ],
+            [
+              "0",
+              "['Ture']"
+            ],
+            [
+              "0",
+              "['odds = OddNaturalsIterator()']"
+            ],
+            [
+              "1",
+              "['0']"
+            ],
+            [
+              "1",
+              "['odd']"
+            ],
+            [
+              "2",
+              "['0']"
+            ],
+            [
+              "2",
+              "['2']"
+            ],
+            [
+              "2",
+              "['34']"
+            ],
+            [
+              "3",
+              "['65']"
+            ],
+            [
+              "4",
+              "['0']"
+            ],
+            [
+              "4",
+              "['4']"
+            ],
+            [
+              "4",
+              "['6']"
+            ],
+            [
+              "5",
+              "['4']"
+            ],
+            [
+              "5",
+              "['6']"
+            ],
+            [
+              "5",
+              "['8']"
+            ],
+            [
+              "6",
+              "['11']"
+            ],
+            [
+              "6",
+              "['21']"
+            ],
+            [
+              "6",
+              "['9']"
+            ],
+            [
+              "7",
+              "['-']"
+            ],
+            [
+              "8",
+              "['False']"
+            ],
+            [
+              "8",
+              "['True']"
+            ]
+          ],
+          "['\\x1b[6~3']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C3']": [
+            [
+              "0",
+              "['2']"
+            ]
+          ],
+          "['\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[C 3']": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['odd']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": []
+      },
+      ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n": {
+        "assessNum": "0",
+        "dictWA2DictInfo": {
+          "['2']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['3']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy"
+            ]
+          },
+          "['5']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['7']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0",
+              "sloppyvareval-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4",
+              "sloppyvareval": "5"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy",
+              "sloppyvareval",
+              "sloppyvareval-sloppy"
+            ]
+          },
+          "['[3]']": {
+            "dictTag2ConceptMsg": {
+              "outoforderrtnvsinc-iteratornext": "2",
+              "outoforderrtnvsinc-sloppy": "0"
+            },
+            "dictTag2KIMsg": {
+              "outoforderrtnvsinc": "4"
+            },
+            "lstMisU": [
+              "outoforderrtnvsinc",
+              "outoforderrtnvsinc-iteratornext",
+              "outoforderrtnvsinc-sloppy"
+            ]
+          }
+        },
+        "dictWA2LstAssessNum_WA": {
+          "[\"''\"]": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "[\"'3'\"]": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "2",
+              "['1']"
+            ]
+          ],
+          "[\"'5'\"]": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "2",
+              "['1']"
+            ]
+          ],
+          "['(1, 3, 5, 9)']": [
+            [
+              "0",
+              "['[3]']"
+            ]
+          ],
+          "['(3)']": [
+            [
+              "0",
+              "['3']"
+            ]
+          ],
+          "['1-']": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "3",
+              "['5']"
+            ]
+          ],
+          "['10']": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "3",
+              "['5']"
+            ]
+          ],
+          "['2']": [
+            [
+              "0",
+              "['[2']"
+            ],
+            [
+              "0",
+              "['[2]']"
+            ],
+            [
+              "1",
+              "['\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C3']"
+            ],
+            [
+              "4",
+              "['`']"
+            ]
+          ],
+          "['3']": [
+            [
+              "0",
+              "['(3)']"
+            ],
+            [
+              "0",
+              "['9']"
+            ]
+          ],
+          "['5']": [
+            [
+              "0",
+              "['9']"
+            ],
+            [
+              "0",
+              "['[7]']"
+            ]
+          ],
+          "['6']": [
+            [
+              "0",
+              "['7']"
+            ],
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['7']": [
+            [
+              "0",
+              "['6']"
+            ],
+            [
+              "0",
+              "['9']"
+            ],
+            [
+              "0",
+              "['[1,3]']"
+            ],
+            [
+              "0",
+              "['[5']"
+            ],
+            [
+              "3",
+              "['11']"
+            ]
+          ],
+          "['9']": [
+            [
+              "0",
+              "['3']"
+            ],
+            [
+              "0",
+              "['5']"
+            ],
+            [
+              "0",
+              "['7']"
+            ]
+          ],
+          "['Empty']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "7",
+              "['0']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['Even']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ]
+          ],
+          "['Evens']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ]
+          ],
+          "['False']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ]
+          ],
+          "['Odd']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['1']"
+            ],
+            [
+              "2",
+              "['4']"
+            ]
+          ],
+          "['Odds']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ]
+          ],
+          "['True']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ]
+          ],
+          "['Ture']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "7",
+              "['0']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ],
+          "['[1 3]']": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ]
+          ],
+          "['[1, 2]']": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ]
+          ],
+          "['[1, 3, 5, 9]']": [
+            [
+              "0",
+              "['[3]']"
+            ]
+          ],
+          "['[1, 5]']": [
+            [
+              "0",
+              "['[3]']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ]
+          ],
+          "['[1,3]']": [
+            [
+              "0",
+              "['7']"
+            ]
+          ],
+          "['[2']": [
+            [
+              "0",
+              "['2']"
+            ]
+          ],
+          "['[2]']": [
+            [
+              "0",
+              "['2']"
+            ]
+          ],
+          "['[3]']": [
+            [
+              "0",
+              "[\"'3'\"]"
+            ],
+            [
+              "0",
+              "[\"'5'\"]"
+            ],
+            [
+              "0",
+              "['(1, 3, 5, 9)']"
+            ],
+            [
+              "0",
+              "['1-']"
+            ],
+            [
+              "0",
+              "['10']"
+            ],
+            [
+              "0",
+              "['[1 3]']"
+            ],
+            [
+              "0",
+              "['[1, 2]']"
+            ],
+            [
+              "0",
+              "['[1, 3, 5, 9]']"
+            ],
+            [
+              "0",
+              "['[1, 5]']"
+            ],
+            [
+              "0",
+              "['[\\x1b[1']"
+            ],
+            [
+              "0",
+              "['exit(0']"
+            ],
+            [
+              "0",
+              "['infinite loop']"
+            ],
+            [
+              "1",
+              "['\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[D\\x1b[C 3']"
+            ],
+            [
+              "7",
+              "['q']"
+            ]
+          ],
+          "['[5']": [
+            [
+              "0",
+              "['7']"
+            ],
+            [
+              "2",
+              "['1']"
+            ]
+          ],
+          "['[7]']": [
+            [
+              "0",
+              "['5']"
+            ]
+          ],
+          "['[\\x1b[1']": [
+            [
+              "0",
+              "['[3]']"
+            ]
+          ],
+          "['e']": [
+            [
+              "6",
+              "['1']"
+            ]
+          ],
+          "['exit(0']": [
+            [
+              "0",
+              "['[3]']"
+            ]
+          ],
+          "['infinite loop']": [
+            [
+              "0",
+              "['[3]']"
+            ]
+          ],
+          "['odds = OddNaturalsIterator()']": [
+            [
+              "1",
+              "['1']"
+            ],
+            [
+              "1",
+              "['2']"
+            ],
+            [
+              "2",
+              "['4']"
+            ],
+            [
+              "3",
+              "['2']"
+            ],
+            [
+              "3",
+              "['4']"
+            ],
+            [
+              "3",
+              "['5']"
+            ],
+            [
+              "3",
+              "['6']"
+            ],
+            [
+              "4",
+              "['1']"
+            ],
+            [
+              "4",
+              "['7']"
+            ],
+            [
+              "5",
+              "['1']"
+            ],
+            [
+              "6",
+              "['1']"
+            ],
+            [
+              "7",
+              "['0']"
+            ],
+            [
+              "9",
+              "['0']"
+            ]
+          ]
+        },
+        "lstWrongAnsWatch": [
+          "['Error']"
+        ]
+      }
+    },
+    "dictAssessNum2AssessId": {
+      "0": ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n",
+      "1": ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n",
+      "2": ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\n3\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n",
+      "3": ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\n3\n>>> next(odd_iter1)\n5\n>>> next(odd_iter2)\nLOCKED_ANSWER\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n",
+      "4": ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\n3\n>>> next(odd_iter1)\n5\n>>> next(odd_iter2)\n7\n>>> next(odd_iter1)\nLOCKED_ANSWER\n>>> next(odd_iter2)\nLOCKED_ANSWER\n",
+      "5": ">>> class OddNaturalsIterator():\n...     def __init__(self):\n...         self.current = 1\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return self\n>>> odds = OddNaturalsIterator()\n>>> odd_iter1 = iter(odds)\n>>> odd_iter2 = iter(odds)\n>>> next(odd_iter1)\n1\n>>> next(odd_iter1)\n3\n>>> next(odd_iter1)\n5\n>>> next(odd_iter2)\n7\n>>> next(odd_iter1)\n9\n>>> next(odd_iter2)\nLOCKED_ANSWER\n",
+      "6": ">>> class EvenNaturalsIterator():\n...     def __init__(self):\n...         self.current = 0\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return EvenNaturalsIterator()\n>>> evens = EvenNaturalsIterator()\n>>> even_iter1 = iter(evens)\n>>> even_iter2 = iter(evens)\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n",
+      "7": ">>> class EvenNaturalsIterator():\n...     def __init__(self):\n...         self.current = 0\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return EvenNaturalsIterator()\n>>> evens = EvenNaturalsIterator()\n>>> even_iter1 = iter(evens)\n>>> even_iter2 = iter(evens)\n>>> next(even_iter1)\n0\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter1)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n",
+      "8": ">>> class EvenNaturalsIterator():\n...     def __init__(self):\n...         self.current = 0\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return EvenNaturalsIterator()\n>>> evens = EvenNaturalsIterator()\n>>> even_iter1 = iter(evens)\n>>> even_iter2 = iter(evens)\n>>> next(even_iter1)\n0\n>>> next(even_iter1)\n2\n>>> next(even_iter1)\n4\n>>> next(even_iter2)\nLOCKED_ANSWER\n>>> next(even_iter2)\nLOCKED_ANSWER\n",
+      "9": ">>> class EvenNaturalsIterator():\n...     def __init__(self):\n...         self.current = 0\n...     def __next__(self):\n...         result = self.current\n...         self.current += 2\n...         return result\n...     def __iter__(self):\n...         return EvenNaturalsIterator()\n>>> evens = EvenNaturalsIterator()\n>>> even_iter1 = iter(evens)\n>>> even_iter2 = iter(evens)\n>>> next(even_iter1)\n0\n>>> next(even_iter1)\n2\n>>> next(even_iter1)\n4\n>>> next(even_iter2)\n0\n>>> next(even_iter2)\nLOCKED_ANSWER\n"
+    },
+    "dictId2Msg": {
+      "0": "Try:\n1) Reading the code or instructions more carefully,\n2) Writing out the variable's values, or\n3) Drawing an environment diagram.",
+      "1": "The Python iterator interface requires an |__iter__| method. This must return an\niterable object, usually the current object |self|. |__iter__| is special and is\ncalled with |iter(ITER)|.",
+      "2": "The Python iterator interface requires a |__next__| method. It returns the\nsubsequent element of the sequence by executing the code in the method.\n|__next__| is special and is called with |next(ITER)|.",
+      "3": "Typo?",
+      "4": "Look closely at when the code increments versus returns in the |__next__|\nfunction.",
+      "5": "Double check the variable's value?",
+      "6": "What is the state of the iterator at this point? Specifically, what are the\nvalues of its attributes when the |__next__| function is called?",
+      "7": "Look more closely at the variable's initial value and how it is being changed.",
+      "8": "Read |__iter__| carefully. What is it returning?"
+    },
+    "dictTg2Func": {
+      "0": "none",
+      "1": "tag2ConceptMsg",
+      "2": "tag2KIMsg",
+      "3": "tag2ConceptMsg",
+      "4": "tag2KIMsg"
+    },
+    "wrongAnsThresh": 2
+  }
+}

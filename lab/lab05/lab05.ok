@@ -1,0 +1,34 @@
+{
+    "name": "Lab 5",
+    "endpoint": "cal/cs61a/sp17/lab05",
+    "src": [
+        "lab05.py",
+        "lab05_extra.py"
+    ],
+    "tests": {
+        "lab05.py:map": "doctest",
+        "lab05.py:over_nine_thousand": "doctest",
+        "tests/dicts.py": "ok_test",
+        "lab05.py:replace_all": "doctest",
+        "lab05.py:count_calls": "doctest",
+        "lab05_extra.py:filter": "doctest",
+        "lab05_extra.py:reverse": "doctest",
+        "lab05_extra.py:counter": "doctest",
+        "lab05_extra.py:make_fib": "doctest"
+    },
+    "default_tests": [
+        "map",
+        "over_nine_thousand",
+        "dicts",
+        "replace_all",
+        "count_calls"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}

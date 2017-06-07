@@ -1,0 +1,31 @@
+{
+    "name": "Lab 8",
+    "endpoint": "cal/cs61a/sp17/lab08",
+    "src": [
+        "lab08.py"
+    ],
+    "tests": {
+        "lab08.py:make_to_string": "doctest",
+        "lab08.py:mutate_reverse": "doctest",
+        "lab08.py:tree_map": "doctest",
+        "lab08.py:add_trees": "doctest",
+        "tests/foobar.py": "ok_test",
+        "tests/attributes.py": "ok_test",
+        "lab08_extra.py": "doctest",
+        "tests/boom.py": "ok_test"
+    },
+    "default_tests": [
+        "make_to_string",
+        "mutate_reverse",
+        "tree_map",
+        "add_trees"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}

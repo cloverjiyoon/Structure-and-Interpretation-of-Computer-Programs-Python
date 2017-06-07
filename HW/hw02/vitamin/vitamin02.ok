@@ -1,0 +1,22 @@
+{
+    "name": "Homework 2",
+    "endpoint": "cal/cs61a/sp17/vitamin02",
+    "src": [
+        "vitamin02.py"
+    ],
+    "tests": {
+        "vitamin02.py":  "doctest"
+    },
+    "default_tests": [
+        "product",
+        "factorial",
+        "make_adder"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}

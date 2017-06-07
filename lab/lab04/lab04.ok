@@ -1,0 +1,36 @@
+{
+    "name": "Lab 4",
+    "endpoint": "cal/cs61a/sp17/lab04",
+    "src": [
+        "lab04.py",
+        "lab04_extra.py"
+    ],
+    "tests": {
+        "tests/lists.py": "ok_test",
+        "lab04.py:if_this_not_that": "doctest",
+        "tests/indexing.py": "ok_test",
+        "lab04.py:coords": "doctest",
+        "lab04.py:link_to_list": "doctest",
+        "lab04.py:interleave": "doctest",
+        "lab04_extra.py:make_pytunes": "doctest",
+        "lab04_extra.py:num_songs": "doctest",
+        "lab04_extra.py:add_song": "doctest",
+        "lab04_extra.py:delete": "doctest"
+    },
+    "default_tests": [
+        "indexing",
+        "if_this_not_that",
+        "lists",
+        "coords",
+        "link_to_list",
+        "interleave"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}

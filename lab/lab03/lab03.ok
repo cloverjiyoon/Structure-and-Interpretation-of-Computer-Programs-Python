@@ -1,0 +1,28 @@
+{
+    "name": "Lab 3",
+    "endpoint": "cal/cs61a/sp17/lab03",
+    "src": [
+        "lab03.py",
+        "lab03_extra.py"
+    ],
+    "tests": {
+        "tests/lambda.py": "ok_test",
+        "lab03.py": "doctest",
+        "lab03_extra.py": "doctest"
+    },
+    "default_tests": [
+        "distance",
+        "closer_city",
+        "ab_plus_c",
+        "is_prime",
+        "lambda"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}

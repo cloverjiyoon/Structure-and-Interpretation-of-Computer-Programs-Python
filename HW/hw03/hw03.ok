@@ -1,0 +1,30 @@
+{
+    "name": "Homework 3",
+    "endpoint": "cal/cs61a/sp17/hw03",
+    "src": [
+        "hw03.py"
+    ],
+    "tests": {
+        "hw03.py":  "doctest"
+    },
+    "default_tests": [
+        "div_rat",
+        "lt_rat",
+        "has_seven",
+        "pingpong",
+        "change",
+        "insert_at_end",
+        "deep_len",
+        "flatten",
+        "riffle",
+        "build_binary_ones",
+        "build_ones"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}

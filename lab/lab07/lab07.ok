@@ -1,0 +1,36 @@
+{
+    "name": "Lab 7",
+    "endpoint": "cal/cs61a/sp17/lab07",
+    "src": [
+        "lab07.py",
+        "lab07_extra.py"
+    ],
+    "tests": {
+        "tests/does_it_work.py": "ok_test",
+        "tests/odds_evens.py": "ok_test",
+        "lab07.py:Str": "doctest",
+        "tests/generators.py": "ok_test",
+        "lab07.py:scale": "doctest",
+        "lab07.py:countdown": "doctest",
+        "lab07.py:Countdown": "doctest",
+        "lab07.py:hailstone": "doctest",
+        "lab07_extra.py:merge": "doctest",
+        "lab07_extra.py:remainders_generator": "doctest",
+        "lab07_extra.py:zip": "doctest"
+    },
+    "default_tests": [
+        "scale",
+        "Str",
+        "countdown",
+        "Countdown",
+        "hailstone"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}
